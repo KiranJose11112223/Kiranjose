@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inria Serif", serif;
+    font-weight: 300;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+
+body{
+    width: 100%;
+}
+
+/* Navbar */
+
+.navbar{
+    display: flex;
+    height: 7.6rem;
+    justify-content: space-between;
+    padding: 2.5rem;
+    background-color: #000;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+
+.navbar > .nav-logo {
+    height: 7.2rem;
+    width: 7.2rem;
+    position: absolute;
+    left: 50%;
+}
+
+.navbar > .nav-logo > img{
+    height: 7.2rem;
+    width: 7.2rem;
+
+}
+
+.navbar > .left-nav {
+    display: flex;
+    gap : 2.2rem;
+}
+
+.navbar > .left-nav > a{
+    color : #F3F1E5;
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+
+.navbar > .right-nav {
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar > .right-nav > a {
+    height: 2.4rem;
+    width: 2.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Home Page */
+
+#banner{
+    height: 90rem;
+}
+
+#banner > .outer-banner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    color: #F2F1E9;
+}
+
+.outer-banner > .banner-image{
+    width: 100%;
+    height: 100%;
+}
+
+.banner-image > img {
+    width: 100%;
+    height: 100%;
+}
+
+.outer-banner > .left-banner{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 6.8rem;
+    top: 35.8rem;
+}
+
+.left-banner > .name {
+    font-size: 9.6rem;
+    /* width: auto; */
+    height: 23rem;
+}
+
+.left-banner > .desgn {
+    display: flex;
+    /* color: #F2F1E9; */
+    font-size: 4.8rem;
+    height: 7.7rem;
+    align-items: center;
+}
+
+.outer-banner > .right-banner {
+    position: absolute;
+    right: 10.5rem;
+    top: 50.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.right-banner > .ft{
+    font-size: 4.8rem;
+}
+
+.right-banner > .song {
+    font-size: 6.4rem;
+}
+
+.right-banner > .btn > button {
+    width: 14.1rem;
+    height: 3.7;
+    background-color: #000;
+    color: #F3F1E5;
+    font-size: 1.1rem;
+    padding: 1.1rem;
+    border-radius: 2rem;
+}
+
+#music{
+    width: 100%;
+    height: 97rem;
+    color: #F3F1E5;
+}
+
+#music > .outer-music{
+    width: 100%;
+    height: 100%;
+    background-color: #00000083;
+    padding : 9rem;
+}
+
+.outer-music > .header {
+    text-align: right;
+    font-size: 9.3rem;
+    margin-right: 0.5rem;
+}
+
