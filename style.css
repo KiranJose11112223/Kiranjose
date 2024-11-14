@@ -16,6 +16,10 @@ html{
 
 body{
     width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
 }
 
 /* Navbar */
@@ -347,7 +351,7 @@ body{
 
 
 .footer-navbar{
-    /* position: fixed; */
+    margin-top: auto;
     z-index: 2;
     width: 100%;
     display: flex;
@@ -410,30 +414,169 @@ body{
     z-index: 2;
 }
 
-.modal > .container {
+.modal > .outer-container{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 3;
+    background-color: #F2F1E9;
+    width: 50rem;
+    height: 82rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    /* grid-template-rows: 1fr 5fr; */
+    /* flex-direction: column; */
+}
+
+.modal > .outer-container > #close {
+    place-self: end;
+    font-size: 4rem;
+    margin-right: 1.5rem;
+    cursor: pointer;
+    /* position: absolute; */
+    /* right : 0.5rem;
+    top: 0.5rem; */
+}
+
+.modal > .outer-container > .container {
+    width: 30rem;
+    place-self: center;
+    /* height: 100%; */
 }
 
 
-
-.about-me-body{overflow-y: scroll;height: calc(100vh - 7.2rem);padding-top: 7.6rem;overflow-x: hidden;}
-
-.about-me-bg{
-    background-image: url("./assets/AboutMeBG.jpeg");background-size: 100% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh; /* Covers the full viewport height */
-    width: 100vw;
+#aboutme{
+    height: 198rem;
+    padding-top: 7.5rem;
+    background-image: url('./assets/AboutMeBG.jpeg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F3F1E5;
 }
-.about-me-header{
-    height: 132px;
-    padding-top: 34px;
-    line-height: 132px;
-    text-align: center;
-    font-size: 96px;
+
+#aboutme > .about-me-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me-container > .about-me-header{
+    font-size: 9.6rem;
+    margin-bottom: 5rem;
+}
+
+.about-me-container > .aboutme-content{
+    height: 165rem;
+    width: 114rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #000;
+}
+
+.aboutme-content > .head{
+    font-size: 3.6rem;
+    font-weight: bold;
+    margin-top: 5rem;
+    place-self: center;
+}
+
+.aboutme-content > .about{
+    font-size: 2rem;
+    margin: 2rem 5rem;
+    align-self:  center;
+}
+
+.aboutme-content > .profile{
+    height: 95rem;
+    width: 100%;
+}
+
+.profile > img {
+    height: 100%;
+    width: 100%;
+}
+
+.aboutme-content > .white-bg {
+    position: absolute;
+    font-size: 3.2rem;
+    font-weight: bold;
+    background-color: #F3F1E5;
+    color: #000;
+    z-index: 4;
+    width: 107rem;
+    top: 110rem;
+    place-self: center;
+    padding: 5.2rem;
+}
+
+.aboutme-content > .story {
+    margin-top: 10rem;
+    font-size: 2rem;
+    padding: 2rem 5rem;
+}
+
+.aboutme-content > .tag{
+    padding: 2rem 22.3rem;
+    font-size: 3.2rem;
+    font-weight: bold;
+}
+
+.aboutme-content > .btn{
+    place-self: center;
+    width: 17.1rem;
+    height: 3.8rem;
+    background-color: #5B5151;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn > a{
     color: #fff;
+    font-size: 1.1rem;
+    text-decoration: none;
+
+}
+
+
+.get-in-touch .body{
+    height: 607px;
+    background-color: #F3F1E5;
+}
+
+.get-in-touch .footer{
+    height: 350px;
+    background-color: #000000;
+    padding-left: 234px;
+    padding-top: 67px;
+    display: flex;
+    gap: 27px;
+}
+
+
+.get-in-touch .footer .content{
+     width: 467px;
+     height: 300px;
+     border-left: 1px solid #fff;
+     position: relative;
+}
+
+.get-in-touch .footer .content .child{
+    position: absolute;
+    top: 0px;
+    left: -18px;
+    width: 33px;
+    height: 36px;
+    background-color: #F3F1E5;
 }
